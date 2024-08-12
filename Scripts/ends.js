@@ -1,18 +1,21 @@
-const htmlDesc = `HTML (HyperText Markup Language) is the foundational language used to create the structure of web pages. It employs specific tags, enclosed in angle brackets (e.g., <p> for paragraphs, <h1> for headings), to define the arrangement and content of a webpage. Essentially, HTML provides the blueprint that web browsers interpret to construct the visual layout and interactive elements you see on a website.`;
-const cssDesc = `CSS (Cascading Style Sheets) is the language used to style and layout web pages. Think of it as the makeup artist for your HTML structure. It controls the appearance of elements, such as colors, fonts, spacing, and layout. By separating styles from the content (HTML), CSS makes web pages more efficient, maintainable, and visually appealing.`;
-const jsDesc = `JavaScript (JS) is the programming language that brings web pages to life. It's the dynamic counterpart to HTML's structure and CSS's style. JS allows you to create interactive elements, handle user input, manipulate the DOM (Document Object Model), and much more. Think of it as the brain behind the webpage, enabling it to respond and adapt to user actions.`;
 
 
 //end descriptions
 
 const formatHTML = () => {
     const width = document.documentElement.clientWidth;
-
+    let title1 = "Frontend";
+    console.log(document.head.title)
+    if (isBackend) {
+        console.log(document.head.title)
+        title1 = "Backend";
+    } 
     if (width > 1200) {
-        document.getElementById("title").textContent = "Frontend Development";
+        document.getElementById("title").textContent = `${title1} Development`;
     } else {
-        document.getElementById("title").textContent = "Frontend";
+        document.getElementById("title").textContent = title1;
     }
+
 }
 //end format
 
@@ -21,7 +24,12 @@ const img1Select = true;
 const img2Select = false;
 const img3Select = false;
 const descEl = document.getElementById("desc");
+
+if (isBackend) {
+    descEl.textContent = phpDesc
+} else {
 descEl.textContent = htmlDesc;
+}
 
 formatHTML();
 
@@ -48,6 +56,15 @@ imageContEl.addEventListener("click", e => {
                 case "js": 
                     printDescHandle("js");
                     break;
+                case "php":
+                    printDescHandle("php");
+                    break;
+                case "python":
+                    printDescHandle("python");
+                    break;
+                case "nodejs": 
+                    printDescHandle("nodejs");
+                    break;
             }
             return;
             
@@ -67,5 +84,15 @@ function printDescHandle(codingLang) {
                 case "js": 
                     descEl.textContent = jsDesc;
                     break;
+                case "php":
+                    descEl.textContent = phpDesc;
+                    break;
+                case "python":
+                    descEl.textContent = pythonDesc;
+                    break;
+                case "nodejs": 
+                    descEl.textContent = nodeDesc;
+                    break;
+
     }
 }

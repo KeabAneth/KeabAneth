@@ -22,7 +22,7 @@ body {
     background-color: rgb(26, 9, 43);
 }
 .linkers {
-    border-top: 2px solid white;
+    /* border-top: 2px solid white; */
     font-family: helvetica;
     font-size: calc(1.5vw + 1.5vh);
     padding: 0px;
@@ -34,12 +34,23 @@ body {
     margin-right: 2vw;
     margin-top: 2vh;
     cursor: pointer;
-}
-ul {
-    list-style-type: none;
-    margin: 0px;
+    position: relative;
 }
 
+.linkers::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-top: 1px solid white; /* Match the existing border color */
+    transition: width 0.3s ease-in-out; /* Adjust duration and easing as needed */
+  }
+  
+  .linkers:hover::after {
+    width: 100%;
+  }
 #coding {
     background-color: rgb(1, 1, 78);
     margin: 10vh 15vw 0px 15vw;
@@ -77,11 +88,34 @@ img {
     font-size: calc(1vw + 1vh);
     padding: calc(1vw + 1vh)
 }
+ul {
+    margin: 0;
+}
+.descDesc {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: rgb(192, 189, 189);
+    margin: calc(2vw + 2vh);
+    font-size: calc(1.5vw + 1.5vh);
+}
+.extension {
+    margin-top: 6vh;
+    background-color: rgb(33, 13, 51);
+    color: white;
+    padding: calc(1vw + 1vh);
+}
+a {
+    color: rgb(162, 236, 160);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
 ::-webkit-scrollbar {
     background-color: rgb(2, 2, 34);
     border-radius: 20px;
     margin-left: 10vw;
-    width: 1.5vw;
+    width: 1vw;
 }
 ::-webkit-scrollbar-thumb {
     background-color: rgb(12, 12, 44);
