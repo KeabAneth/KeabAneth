@@ -112,6 +112,9 @@ a {
 a:hover {
     text-decoration: underline;
 }
+#images img {
+    cursor: pointer;
+}
 ::-webkit-scrollbar {
     background-color: rgb(2, 2, 34);
     border-radius: 20px;
