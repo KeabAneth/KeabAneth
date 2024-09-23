@@ -10,5 +10,6 @@
 .projects {
     background-color: rgb(6, 10, 48);
     width: 20vw;
-    height: auto;
+    height: 20vh;
+    box-shadow: black 10px 5px 5px;
 }
