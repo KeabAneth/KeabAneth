@@ -13,3 +13,8 @@
     height: 20vh;
     box-shadow: black 10px 5px 5px;
 }
+.projects img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
