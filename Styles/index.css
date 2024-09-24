@@ -12,7 +12,7 @@
     border: rgb(6, 10, 48) solid 2px;
     width: 20vw;
     height: 20vh;
-    box-shadow: black 10px 5px 5px;
+    /* box-shadow: black 10px 5px 5px; */
     border-radius: 20px;
 }
 .projects:hover {
