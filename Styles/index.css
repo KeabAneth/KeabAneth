@@ -8,6 +8,7 @@
     padding: 20px;
 }
 .projects {
+    background-color: transparent;
     border: rgb(6, 10, 48) solid 2px;
     width: 20vw;
     height: 20vh;
