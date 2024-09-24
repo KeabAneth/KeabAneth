@@ -12,6 +12,7 @@
     width: 20vw;
     height: 20vh;
     box-shadow: black 10px 5px 5px;
+    border-radius: 20px;
 }
 .projects img {
     object-fit: cover;
