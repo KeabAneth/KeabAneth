@@ -8,14 +8,14 @@
     padding: 20px;
 }
 .projects {
-    background-color: rgb(6, 10, 48);
+    border: rgb(6, 10, 48) solid 2px;
     width: 20vw;
     height: 20vh;
     box-shadow: black 10px 5px 5px;
     border-radius: 20px;
 }
 .projects:hover {
-    background-color: rgb(6, 6, 123);
+    border-color: rgb(6, 6, 123);
     animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 }
 @keyframes shake {
