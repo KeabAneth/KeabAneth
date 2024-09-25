@@ -14,10 +14,13 @@
     height: 20vw;
     /* box-shadow: black 10px 5px 5px; */
     border-radius: 20px;
+    animation: shake 1s;
+    animation-direction: reverse;
     animation: shake 1s reverse;
 }
 .projects:hover {
-    animation: shake 1s forwards;
+    animation: shake 1s;
+    animation-direction: forwards;
 }
 @keyframes shake {
     0% {
