@@ -24,10 +24,10 @@
 }
 @keyframes shake {
     0% {
-      transform: translateZ(0);
+      transform: translateX(0);
     }
     100% {
-      transform: translateZ(10px);
+      transform: translateX(10px);
     }
 }
 .projects img {
