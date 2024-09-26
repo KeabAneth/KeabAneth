@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+    <script src="/Scripts/math.js" defer></script>
     <link rel="stylesheet" href="styles.css">
     <title>Math Practice</title>
     <style>
@@ -83,27 +83,48 @@
   70% {
     transform: translate3d(-4px, 10px, 0);
   }
-}
-  </style>
 
-<body>
-    </li>
-    <header class="top">
-        <ul><span style="display: flex; justify-content: space-between;">
-                <div id="title">Home</div>
-                <div id="linkersCont">
-                    <p id="frontendLink" class="linkers">Frontend</p>
-                    <p id="backendLink" class="linkers">Backend</p>
-                </div>
-            </span>
-        </ul>
-    </header>
-    <main style="display: flex; place-content: center;">
-        <div id="main">
-       <div class="projects"><a href="./parkour"><img src="./images/parkour.png"></a></div>
-       <div class="projects"><a href="./math-practice/"><img src=""></a> </div>
-           
-        </div>
-    </main>
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+.animate {
+  animation: shake 1s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+#tabs {
+    background-color: rgb(11, 11, 100);
+    padding: 10px;
+    margin: none;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    z-index: 9;
+    display: flex;
+}
+.tab {
+    background-color: blue;
+    border-radius: 0px 0px 20px 20px;
+    text-align: right;
+}
+    </style>
+</head>
+<body>   
+    <div id="scorecont"><div id="score">0</div><span id="best">0</span></div>
+    <div id="tabs"><span class="tab" id="squares">Squares</span></div>
+    <div style="display: flex; justify-content: center;">
+    <form class="squ">
+        <div id="modal">
+    <span id="info"></span>  
+    <input id="guess" type="number"></input>
+    <button type="submit" id="btn">Guess</button>
+    <span id="feed"></span>
+</div>
+</form>
+</div>
 </body>
 </html>
