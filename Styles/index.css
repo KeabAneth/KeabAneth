@@ -16,8 +16,7 @@
     border-radius: 20px;
 }
 .projects:hover {
-    animation: shake 1s cubic-bezier() both;
-    animation-direction: forwards;
+    transform: scale(5px);
 }
 @keyframes shake {
     0% {
