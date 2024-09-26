@@ -7,6 +7,7 @@
 </head>
 <body style="background-color: black;">
     <button id="flash">FlashBang</button>
+    <p style="color: red; font-weight: bolder;">EXTREME EPILEPSY WARNING! CONTINUE AT OWN RISK!</p>
     <script>
         const flash = document.getElementById("flash");
         let yay;
@@ -15,6 +16,9 @@
         }, 100);
 
         flash.addEventListener("click", () => {
+            if (document.querySelector("p")) {
+                document.querySelector("p").remove();
+            }
             if(yay) {
                 clearInterval(yay);
                 yay = "";
