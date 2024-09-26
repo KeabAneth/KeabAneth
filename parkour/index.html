@@ -1,8 +1,10 @@
 <!doctype html>
 <html lang="en-US">
   <head>
+    <link rel="stylesheets" href="/Styles/styles.css">
+    <script src="/Scripts/linkers.js" defer></script>
     <meta charset="utf-8" />
-    <title>Canvas tutorial</title>
+    <title>Simple Parkour | Keab Aneth</title>
     <style>
       canvas {
         border: 1px solid black;
@@ -13,7 +15,16 @@
     </style>
   </head>
   <body>
-    <h1 id="err"></h1>
+    <header class="top">
+        <ul><span style="display: flex; justify-content: space-between;">
+                <div id="title">Home</div>
+                <div id="linkersCont">
+                    <p id="frontendLink" class="linkers">Frontend</p>
+                    <p id="backendLink" class="linkers">Backend</p>
+                </div>
+            </span>
+        </ul>
+    </header>
     <style>
         canvas {
             image-rendering: pixelated;
