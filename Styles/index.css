@@ -15,7 +15,7 @@
     /* box-shadow: black 10px 5px 5px; */
     border-radius: 20px;
 }
-.projects:hover {
+.projects img:hover {
     transform: scale(5px);
 }
 @keyframes shake {
