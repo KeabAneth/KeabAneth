@@ -12,6 +12,7 @@
   border: rgb(6, 10, 48) solid 2px;
   width: 10vw;
   height: 10vw;
+  padding: 10%;
   /* box-shadow: black 10px 5px 5px; */
   border-radius: 20px;
   /* animation: shake 1000ms reverse; */
