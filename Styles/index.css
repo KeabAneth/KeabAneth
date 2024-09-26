@@ -18,7 +18,7 @@
     animation-direction: reverse;
 }
 .projects:hover {
-    animation: shake 1s;
+    animation: shake 1s cubic-bezier() both;
     animation-direction: forwards;
 }
 @keyframes shake {
