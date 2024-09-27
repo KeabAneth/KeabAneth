@@ -16,7 +16,7 @@ function format() {
 
 format();
 
-document.addEventListener("resize", format)
+document.addEventListener("resize", format);
 
 document.addEventListener("submit", (e) => {
     if(!waiting) {
@@ -49,7 +49,7 @@ bestEl.textContent = best;
 
 let currNumb = Math.round(Math.random() * (30 - 1) + 1)
 
-const genNumb = () => {
+function genNumb() {
     currNumb = Math.round(Math.random() * (30 - 1) + 1);
     info.textContent = currNumb + "²";
     guess.value = "";
@@ -68,6 +68,8 @@ function setScores(setter) {
     }
     scoreEl.textContent = score;
 }
+
+genNumb();
 
 info.textContent = currNumb.toString()
 
