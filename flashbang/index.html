@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body style="background-color: black;">
-    <button style="border: none; border-radius: 20%; position: absolute;" id="flash">FlashBang</button>
+    <button style="border: black 1px solid; border-radius: 20%; position: absolute;" id="flash">FlashBang</button>
     <p id="warning" style="color: red; font-weight: bolder;">EXTREME EPILEPSY WARNING! CONTINUE AT OWN RISK!</p>
     <script>
         const flash = document.getElementById("flash");
@@ -15,6 +15,7 @@
             document.body.style.backgroundColor = "black";
             flash.style.backgroundColor = "black";
             flash.style.color = "white";
+            flash.style.borderColor = "black";
         }, 100);
 
         flash.addEventListener("click", () => {
@@ -33,6 +34,7 @@
             document.body.style.backgroundColor = "white"
             flash.style.backgroundColor = "white";
             flash.style.color = "black";
+            flash.style.borderColor = "black";
            },100)
         })
     </script>
