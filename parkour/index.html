@@ -13,7 +13,7 @@
     </style>
   </head>
   <body>
-    <h1 id="err"></h1>
+    <!-- <h1 id="err"></h1> -->
     <style>
         canvas {
             image-rendering: pixelated;
@@ -383,7 +383,7 @@ function bounce() {
                 lastY +=5
             }
             
-            document.getElementById("err").textContent = `${lastX} , ${lastY}, ${altitude}`;
+            // document.getElementById("err").textContent = `${lastX} , ${lastY}, ${altitude}`;
             
             // ctx.drawImage(player, lastX, lastY, 10, 10)
             ctx.fillRect(lastX, lastY, 10, pHeight);
