@@ -14,7 +14,7 @@
   height: 10vw;
   margin: 20px;
   /* box-shadow: black 10px 5px 5px; */
-  border-radius: 20px;
+  border-radius: 30px;
   /* animation: shake 1000ms reverse; */
   animation: unshake 100ms ease-in-out;
 }
@@ -22,6 +22,7 @@
   .projects {
     width: 15vw;
     height: 15vw;
+    border-radius: 20px;
   }
 }
 .projects:hover {
