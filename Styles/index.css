@@ -20,8 +20,8 @@
 }
 @media screen and (max-width: 600px) {
   .projects {
-    width: calc(0.5vw+0.5vh);
-    height: calc(0.5vw + 0.5vh);
+    width: 15vw;
+    height: 15vw;
   }
 }
 .projects:hover {
