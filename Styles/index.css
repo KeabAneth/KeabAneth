@@ -18,6 +18,12 @@
   /* animation: shake 1000ms reverse; */
   animation: unshake 100ms ease-in-out;
 }
+@media screen and (max-width: 600px) {
+  .projects {
+    width: calc(0.5vw+0.5vh);
+    height: calc(0.5vw + 0.5vh);
+  }
+}
 .projects:hover {
   animation: shake 100ms forwards;
 }
