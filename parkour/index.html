@@ -11,6 +11,7 @@
         width: auto;
       }
     </style>
+        <link rel="stylesheet" href="/Styles/styles.css">
   </head>
   <body>
     <!-- <h1 id="err"></h1> -->
@@ -23,6 +24,15 @@
         }
 
     </style>
+     <ul><span style="display: flex; justify-content: space-between;">
+        <div id="title">Home</div>
+    </span>
+</ul>
+<script>
+document.getElementById("title").addEventListener("click", () => {
+    window.location.href = "/";
+})
+</script>
     <canvas id="tutorial" width="500" height="150"></canvas>
     <img src="player.png" style="display: none;">
     <img src="grass.png" style="display: none;" id="grass">
