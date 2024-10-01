@@ -50,6 +50,7 @@ function gamemodeAnim(target) {
     
 
 }
+try{
 
 function changeSelected(target, container) {
     const cont = container.children;
@@ -68,7 +69,9 @@ function changeSelected(target, container) {
     }
 }
 }
-
+} catch(err) {
+    instruct.textContent = err;
+}
 function changeGamemode(gm) {
     if (gm === "VS BOT") {
         console.log("vsbot");
