@@ -5,7 +5,7 @@ const main = document.getElementById("main");
 
 let selectedGamemode = "VS BOT";
 let p2Board = main.cloneNode(true);
-p2Board.querySelector("#button").id = "button2";
+p2Board.querySelector("#select").id = "button2";
 p2Board.id = "main2";
 
 checkTitle();
