@@ -53,15 +53,13 @@ boards.addEventListener("click", (e) => {
     if(e.target == e.currentTarget) {
         return;
     } else {
-        Array.from(boards.children).forEach(element => {
+        for (element in boards.children) {
             if (e.target == element) {
                 return;
             } else {
-                Array.from(element.children).forEach(el => {
-                    if(el.classList.contains("selected")) {
+                    for(el in element.children) {  
                         el.classList.remove("selected")
-                    }
-                })
+                }
             }
 
 })}
