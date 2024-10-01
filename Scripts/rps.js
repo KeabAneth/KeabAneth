@@ -53,7 +53,7 @@ boards.addEventListener("click", (e) => {
     if(e.target == e.currentTarget) {
         return;
     } else {
-        e.currentTarget.forEach(element => {
+        e.currentTarget.children.forEach(element => {
             if (e.target == element) {
                 return;
             } else {
