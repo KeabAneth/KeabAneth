@@ -57,7 +57,7 @@ boards.addEventListener("click", (e) => {
             if (e.target == element) {
                 return;
             } else {
-                element.forEach(el => {
+                Array.from(element.children).forEach(el => {
                     if(el.classList.contains("selected")) {
                         el.classList.remove("selected")
                     }
