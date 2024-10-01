@@ -62,7 +62,7 @@ boards.addEventListener("click", (e) => {
                 }
             }
 
-})}
+}}
 e.target.classList.add("selected")
 });
 
