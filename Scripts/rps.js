@@ -1,15 +1,18 @@
 const title = document.getElementById("title");
 const boards = document.getElementById("boards");
 const instruct = document.getElementById("instruct");
+const main = document.getElementById("main");
+
 let selectedGamemode = "VS BOT";
-let p2Board;
+let p2Board = main.cloneNode(true);
+p2Board.querySelector("#button").id = "button2";
+p2Board.id = "main2";
+
 checkTitle();
 window.addEventListener("resize", () => {
     checkTitle(); 
     formatStartBg();
     });
-
-const main = document.getElementById("main");
 
 let mainInfo = main.getBoundingClientRect();
 
@@ -75,11 +78,12 @@ function changeSelected(target, container) {
 function changeGamemode(gm) {
     if (gm === "VS BOT") {
         console.log("vsbot");
-        if (p2Board) {
+        if (document.getElementById("main2")) {
             p2Board.remove();
         }
     } else {
         p2Board = main.cloneNode(true);
+        p2Board.querySelector("#button").id = "button2";
         p2Board.id = "main2";
         boards.append(p2Board);
     }
