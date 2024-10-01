@@ -98,7 +98,7 @@ function changeGamemode(gm) {
         }
     } else {
         p2Board = main.cloneNode(true);
-        p2Board.querySelector("#button").id = "button2";
+        p2Board.querySelector("#selected").id = "button2";
         p2Board.id = "main2";
         boards.append(p2Board);
     }
