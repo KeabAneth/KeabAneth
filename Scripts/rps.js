@@ -49,11 +49,29 @@ gamemode.addEventListener("click", e => {
     formatStartBg();
 });
 
+boards.addEventListener("click", (e) => {
+    if(e.target == e.currentTarget) {
+        return;
+    } else {
+        e.currentTarget.array.forEach(element => {
+            if (e.target == element) {
+                return;
+            } else {
+                element.forEach(el => {
+                    if(el.classList.contains("selected")) {
+                        el.classList.remove("selected")
+                    }
+                })
+            }
+
+})}
+e.target.classList.add("selected")
+});
+
 function gamemodeAnim(target) {
     
 
 }
-try{
 
 function changeSelected(target, container) {
     const cont = container.children;
@@ -71,9 +89,6 @@ function changeSelected(target, container) {
         changeGamemode(selectedGamemode)
     }
 }
-}
-} catch(err) {
-    instruct.textContent = err;
 }
 function changeGamemode(gm) {
     if (gm === "VS BOT") {
