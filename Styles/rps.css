@@ -80,7 +80,8 @@ h3 {
     border: none;
     border-radius: 20px;
     padding: 3px 5px 3px 5px;
-    color: burlywood
+    color: burlywood;
+    place-self: end center;
 }
 .canBeSelected {
     /* background-color: ; */
