@@ -99,7 +99,7 @@ function botChoose() {
         return "r";
     } else if (randNum > 0.66) {
         return "p";
-    } else if (randNumm < 0.33) {
+    } else if (randNum < 0.33) {
         return "s";
     }
 }
