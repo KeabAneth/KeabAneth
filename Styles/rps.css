@@ -82,6 +82,7 @@ h3 {
     padding: 3px 5px 3px 5px;
     color: burlywood;
     place-self: end center;
+    cursor: pointer;
 }
 .canBeSelected {
     /* background-color: ; */

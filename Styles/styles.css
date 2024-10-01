@@ -83,7 +83,6 @@ img {
 .selected {
     border: 2px solid white;
     background-color: rgb(12, 12, 70);
-    ;
     border-radius: 20px;
 }
 
