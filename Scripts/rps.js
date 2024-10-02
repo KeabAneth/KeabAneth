@@ -53,11 +53,11 @@ boards.addEventListener("click", (e) => {
     if(e.target == e.currentTarget) {
         return;
     } else {
-        for (element in boards.children) {
+        for(const element in boards.children) {
             if (e.target == element) {
                 return;
             } else {
-                    for(el in element.children) {  
+                    for(const el in element.children) {  
                         el.classList.remove("selected")
                 }
             }
