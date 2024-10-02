@@ -5,6 +5,7 @@ const main = document.getElementById("main");
 
 let selectedGamemode = "VS BOT";
 let p2Board = main.cloneNode(true);
+let p1Choice = "";
 p2Board.querySelector("#select").id = "button2";
 p2Board.id = "main2";
 
@@ -70,7 +71,9 @@ boards.addEventListener("click", (e) => {
 
 }}
 if(!ret) {
-e.target.classList.add("selected")
+e.target.classList.add("selected");
+p1Choice = e.target.id;
+instruct.textContent = p1Choice;
 }
 });
 
