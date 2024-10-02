@@ -54,12 +54,12 @@ boards.addEventListener("click", (e) => {
     let ret = false;
     if(e.target == boards) {
         ret = true;
-        return;
+        // return;
     } else {
         for(const element in boards.children) {
             if (e.target == element) {
                 ret = true;
-                return;
+                // return;
             } else {
                 if(!ret) {
                     for(const el in element.children) { 
