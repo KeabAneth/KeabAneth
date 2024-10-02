@@ -68,7 +68,9 @@ boards.addEventListener("click", (e) => {
             }
 
 }}
+if(!ret) {
 e.target.classList.add("selected")
+}
 });
 
 function gamemodeAnim(target) {
