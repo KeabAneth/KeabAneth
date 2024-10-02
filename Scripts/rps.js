@@ -50,7 +50,7 @@ gamemode.addEventListener("click", e => {
 });
 
 boards.addEventListener("click", (e) => {
-    let ret;
+    let ret = false;
     if(e.target == boards) {
         ret = true;
         return;
