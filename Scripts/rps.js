@@ -50,16 +50,21 @@ gamemode.addEventListener("click", e => {
 });
 
 boards.addEventListener("click", (e) => {
-    if(e.target == e.currentTarget) {
+    let ret;
+    if(e.target == boards) {
+        ret = true;
         return;
     } else {
         for(const element in boards.children) {
             if (e.target == element) {
+                ret = true;
                 return;
             } else {
+                if(!ret) {
                     for(const el in element.children) {  
                         el.classList.remove("selected")
                 }
+            }
             }
 
 }}
