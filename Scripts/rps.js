@@ -52,7 +52,7 @@ gamemode.addEventListener("click", e => {
 
 boards.addEventListener("click", (e) => {
     if(e.target.id = "select" && p1Choice) {
-        instruct.textContent = botChoose();
+        botChoose();
     }
 })
 
@@ -135,11 +135,11 @@ function startGame() {
 function botChoose() {
     const randNum = Math.random();
     if (randNum > 0.33 && randNum < 0.66) {
-        return "r";
+        instruct.textContent = "bot chose rock";
     } else if (randNum > 0.66) {
-        return "p";
+        instruct.textContent = "bot chose paper";
     } else if (randNum < 0.33) {
-        return "s";
+        instruct.textContent = "bot chose scissors";
     }
 }
 
