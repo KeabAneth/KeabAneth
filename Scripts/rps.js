@@ -51,15 +51,15 @@ gamemode.addEventListener("click", e => {
 });
 
 boards.addEventListener("click", (e) => {
-    for(const bo in boards.querySelectorAll("button")) {
-        if (e.target = bo) {
-            if(bo.parentElement.id == "main") {
-                instruct.textContent = botChoose()
-            } else if(bo.parentElement.id == "main2") {
-                // return;
-            }
-        }
-    }
+    // for(const bo in boards.querySelectorAll("button")) {
+    //     if (e.target = bo) {
+    //         if(bo.parentElement.id == "main") {
+    //             instruct.textContent = botChoose()
+    //         } else if(bo.parentElement.id == "main2") {
+    //             // return;
+    //         }
+    //     }
+    // }
 
     let ret = false;
     if(e.target == boards) {
