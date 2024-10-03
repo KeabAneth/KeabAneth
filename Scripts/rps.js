@@ -56,7 +56,7 @@ boards.addEventListener("click", (e) => {
             if(bo.parentElement.id == "main") {
                 instruct.textContent = botChoose()
             } else if(bo.parentElement.id == "main2") {
-                return;
+                // return;
             }
         }
     }
