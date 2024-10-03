@@ -51,7 +51,16 @@ gamemode.addEventListener("click", e => {
 });
 
 boards.addEventListener("click", (e) => {
+    if(e.target.id = "select" && p1Choice) {
+        instruct.textContent = botChoose();
+    }
+})
+
+boards.addEventListener("click", (e) => {
     let ret = false;
+    if(e.target.id == "select") {
+        return;
+    }
     if(e.target == boards) {
         ret = true;
         // return;
