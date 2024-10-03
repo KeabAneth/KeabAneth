@@ -64,7 +64,7 @@ boards.addEventListener("click", (e) => {
                 if(!ret) {
                     for(const el of element.children) { 
                         for(const e of el.children) {
-                        el.classList.remove("selected");
+                        e.classList.remove("selected");
                         }
                 }
             }
