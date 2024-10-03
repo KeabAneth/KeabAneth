@@ -75,7 +75,7 @@ boards.addEventListener("click", (e) => {
             }
 
 }}
-if(!ret || e.target.id == "board") {
+if(!ret || e.target.id != "board") {
 e.target.classList.add("selected");
 p1Choice = e.target.id;
 instruct.textContent = p1Choice;
