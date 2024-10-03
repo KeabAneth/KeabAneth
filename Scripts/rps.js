@@ -50,11 +50,11 @@ gamemode.addEventListener("click", e => {
     formatStartBg();
 });
 
-// boards.addEventListener("click", (e) => {
-//     if(e.target.id = "select" && p1Choice) {
-//         instruct.textContent = botChoose();
-//     }
-// })
+boards.addEventListener("click", (e) => {
+    if(e.target.id = "select" && p1Choice) {
+        instruct.textContent = botChoose();
+    }
+})
 
 boards.addEventListener("click", (e) => {
     let ret = false;
